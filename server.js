@@ -118,16 +118,25 @@ const Role = db.role;
 const Data = db.data;
 
 db.mongoose
-  .connect(`mongodb://${dbConfig.HOST}:${dbConfig.PORT}/${dbConfig.DB}`, {
+  .connect(
+
+    'mongodb://cl7zc16cf0040cds7azwsa3ol:02mBnDMixxKfoXdwipRlLzJh@cl7zc16cg532482cds707894uqv:27017/?readPreference=primary&ssl=false'
+    
+    
+  /*
+    `mongodb://${dbConfig.HOST}:${dbConfig.PORT}/${dbConfig.DB}`, {
     useNewUrlParser: true,
     useUnifiedTopology: true
-  })
+  }
+  */
+  )
+  
   .then(() => {
     console.log("Successfully connect to MongoDB.");
     initial();
   })
   .catch(err => {
-    console.error("Connection error", err);
+    console.error("custom Connection error", err);
     process.exit();
   });
 
