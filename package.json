@@ -2,7 +2,7 @@
   "name": "node-js-jwt-auth-mongodb",
   "version": "1.0.0",
   "description": "Node.js + MongoDB: JWT Authentication & Authorization",
-  "main": "serverRTC.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
